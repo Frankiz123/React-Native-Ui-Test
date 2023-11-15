@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest --watchAll",
+    "test": "jest --watchAll --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
     "lint": "eslint ."
   },
   "dependencies": {
